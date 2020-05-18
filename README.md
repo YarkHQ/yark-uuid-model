@@ -3,7 +3,7 @@ A simple trait to provide UUID support on Eloquent models.
 
 ### Installation
 
-```composer require yarkhq/laravel-uuid-model```
+```composer require yark/yark-uuid-model```
 
 ### Usage
 
@@ -50,20 +50,6 @@ class Book extends Eloquent
     protected $routeKeyName = 'slug';
 }
 ```
-
-### Creating Migrations
-
-This package also includes a small helper to add a uuid column to an existing model. This is entirely optional and we would suggest including a UUID column within your migrations when you create a table.
-
-```php
-$table->uuid('uuid');
-```
-
-To run the command, use uuid:migration with the table name.
-
-```php artisan uuid:migration books```
-
-This will place a migration in your migrations directory which will add a uuid column. You will still need to migrate the database yourself.
 
 ### License
 
